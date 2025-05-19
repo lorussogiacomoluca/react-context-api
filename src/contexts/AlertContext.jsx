@@ -1,8 +1,8 @@
-import { useContext } from "react";
-
-const AlertContext = useContext();
+import { createContext, useContext, useState } from "react";
 
 //CustomProvider
+const AlertContext = createContext();
+
 const AlertProvider = ({ children }) => {
   //Definire lo stato iniziale del provider, in cui passare il tipo di alert da generare
   const initialData = { type: "", message: "" };
