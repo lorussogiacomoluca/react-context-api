@@ -1,5 +1,6 @@
+import { posts } from "./assets/posts";
 function App() {
-  return <></>;
+  return console.log(posts);
 }
 
 export default App;
