@@ -1,6 +1,6 @@
 import { posts } from "./assets/posts";
 import Homepage from "./components/Homepage";
-import PostPage from "./components/PostPage";
+import PostsPage from "./components/PostsPage";
 //Import Context
 import PostsContext from "./contexts/PostsContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route element={<DefaultLayouts />}>
             <Route path="/" element={<Homepage />} />
-            <Route path="/posts" element={<PostPage />} />
+            <Route path="/posts" element={<PostsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
