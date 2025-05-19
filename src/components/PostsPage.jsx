@@ -1,15 +1,10 @@
-//Import Use Context
-import React, { useContext } from "react";
-import PostsContext from "../contexts/PostsContext";
-
+import React from "react";
 import PostsList from "./PostsList";
 
 const PostsPage = () => {
-  let postsList = useContext(PostsContext);
-  console.log(postsList);
   return (
     <div>
-      <h2>Posts Page</h2>
+      <h3>PostPage.jsx</h3>
       <PostsList />
     </div>
   );

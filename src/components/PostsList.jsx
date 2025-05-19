@@ -1,9 +1,18 @@
-import React from "react";
+//Import Use Context
+import React, { useContext } from "react";
+import PostsContext from "../contexts/PostsContext";
 
 const PostsList = () => {
+  let { posts } = useContext(PostsContext);
+
   return (
     <div>
-      <h4>PostsList.jsx</h4>
+      <h5>PostList.jsx</h5>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
     </div>
   );
 };
