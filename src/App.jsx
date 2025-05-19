@@ -1,6 +1,10 @@
 import { posts } from "./assets/posts";
+//Import Context
+import PostsContext from "./contexts/PostsContext";
+
 function App() {
-  return console.log(posts);
+  console.log(posts);
+  return <h1>Homepage</h1>;
 }
 
 export default App;
