@@ -8,9 +8,13 @@ const PostCard = ({ id, title, category, body }) => {
         <div className="card-title">{title}</div>
         <div className="card-subtitle text-muted">{category}</div>
         <div className="card-body">{body}</div>
-        <NavLink to={`/post/${id}`} className="btn-btn-primary">
-          Leggi l'articolo
-        </NavLink>
+        <div className="row">
+          <div className="col text-center">
+            <NavLink to={`/post/${id}`} className="btn btn-primary">
+              Leggi l'articolo
+            </NavLink>
+          </div>
+        </div>
       </div>
     </div>
   );

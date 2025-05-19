@@ -7,15 +7,16 @@ const PostsList = () => {
   let { posts } = useContext(PostsContext);
 
   return (
-    <div>
+    <div className="row">
       {posts.map((post) => (
-        <PostCard
-          key={post.id}
-          id={post.id}
-          title={post.title}
-          category={post.category}
-          body={post.body}
-        />
+        <div className="col-md-6" key={post.id}>
+          <PostCard
+            id={post.id}
+            title={post.title}
+            category={post.category}
+            body={post.body}
+          />
+        </div>
       ))}
     </div>
   );
